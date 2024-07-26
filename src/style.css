@@ -13,7 +13,6 @@ body {
 
 .header p, .footer p {
     color: var(--primary-accent);
-    font-size: 1.2rem;
 }
 
 /*set colors*/
@@ -100,14 +99,15 @@ body {
 .foodContainer {
     padding: 0.3rem;
     border-radius: 10px;
+    color: var(--accent);
 }
 .foodContainer .title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .foodContainer .description {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .imageSection img {
@@ -120,7 +120,7 @@ body {
     place-content: center center;
 }
 
-.main button {
+button {
     border-style: solid;
     border-color: var(--heavy-brown);
     background-color: var(--accent);
@@ -129,6 +129,18 @@ body {
 
     padding: 0.7rem;
 }
-.main button { transition: 0.05s; }
-.main button:hover { transform: scale(1.1); }
-.main button:active { transform: scale(1.05); }
+button { transition: 0.05s; }
+button:hover { transform: scale(1.1); }
+button:active { transform: scale(1.05); }
+
+.header button {
+    padding: 0.5rem 1rem;  
+}
+
+.header {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.header p {
+    font-size: 1.3rem;
+}
