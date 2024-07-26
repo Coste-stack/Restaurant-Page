@@ -1,4 +1,4 @@
-import { createMainCourses } from "./main-menu-mainCourses";
+import { createMainCourses, mainCourses } from "./main-menu-mainCourses";
 
 export function createMainMenu(){
     const mainMenu = document.createElement('div');
@@ -18,7 +18,7 @@ export function createMainMenu(){
 
     const mainMenuDefault = mainMenu.cloneNode(true);
     mainMenu.appendChild(header);
-    mainMenu.appendChild(createMainCourses()); // as default put MainCourses
+    mainMenu.appendChild(createMainCourses(mainCourses)); // as default put MainCourses
 
     /*add a way to select specific menu category*/
     const buttons = header.querySelectorAll('button');
@@ -27,10 +27,9 @@ export function createMainMenu(){
             // if there's already a menu created, delete it
             document.querySelectorAll('.menuContainer').forEach(el => el.remove());
 
-            mainMenu.appendChild(createMainCourses());
+            mainMenu.appendChild(createMainCourses(mainCourses));
         });
     });
-
     
     return mainMenu;
 }
