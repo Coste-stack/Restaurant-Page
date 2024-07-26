@@ -2,8 +2,8 @@
 :root {
     --primary-accent: #d9b061;
     --secondary-accent: #d9c4a9;
-    --background: #d8d0c5;
-    --heavy-brown: #8d6f57;
+    --background: #bbaf9f;
+    --heavy-brown: #81634e;
     --accent: #3f0d0c;
 }
 body { background-color: var(--background); }
