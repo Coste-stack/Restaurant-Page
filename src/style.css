@@ -1,7 +1,28 @@
-body { width: 100%; }
+:root {
+    --primary-accent: #d9b061;
+    --secondary-accent: #d9c4a9;
+    --background: #d8d0c5;
+    --heavy-brown: #8d6f57;
+    --accent: #3f0d0c;
+}
 
-/*set placeholder values and colors*/
-.header, .footer { background-color: lightgrey; }
+body { 
+    width: 100%; 
+    background-color: var(--background);
+}
+
+.header p, .footer p {
+    color: var(--primary-accent);
+    font-size: 1.2rem;
+}
+
+/*set colors*/
+.header, .footer { 
+    background-color: var(--accent); 
+}
+.mainWelcome { background-color: var(--heavy-brown); }
+
+.foodContainer { background-color: var(--heavy-brown);}
 
 .header, .main, .footer { width: 100%; }
 .main {padding-bottom: 2.5rem;}
@@ -14,14 +35,13 @@ body { width: 100%; }
 .footer {
     position: fixed;
     bottom: 0;
-    height: 2.5rem;
+    height: 1.5rem;
 }
 
 /*align header items*/
 .header {
     display: flex;
     justify-content: space-between;
-    z-index: 3;
 }
 .header nav {
     display: flex;
@@ -31,7 +51,7 @@ body { width: 100%; }
 }
 
 .imageContainer, .imageSection { position: relative; display: inline-block; }
-.imageContainer img, .imageSection img {
+.mainWelcome .imageContainer img {
     display: block;
     max-height: 35rem;
     border-radius: 1rem;
@@ -46,23 +66,21 @@ body { width: 100%; }
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 0.8rem;
-    z-index: 5;
+    z-index: 1;
 }
+.header, .footer { z-index: 2; }
 
 /*center welcome image*/
 .mainWelcome {
     display: grid;
     justify-content: center;
     padding: 1rem;
-    background-color: #333333;
 }
 
 /*center menu header*/
 .mainMenu header {
     display: flex;
     justify-content: center;
-
-    background-color: #5b746b;
 }
 .mainMenu header nav {
     display: flex;
@@ -80,8 +98,8 @@ body { width: 100%; }
 
 
 .foodContainer {
-    background-color: gray;
     padding: 0.3rem;
+    border-radius: 10px;
 }
 .foodContainer .title {
     font-size: 1.5rem;
@@ -94,6 +112,7 @@ body { width: 100%; }
 
 .imageSection img {
     max-height: 300px;
+    border-radius: 10px;
 }
 
 .imageSection {
