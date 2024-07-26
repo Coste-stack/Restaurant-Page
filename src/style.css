@@ -1,9 +1,10 @@
-/*set placeholder values and colors*/
-.header, .footer { background-color: lightgreen; }
+body { width: 100%; }
 
-.header, .main, .footer {
-    width: 100%;
-}
+/*set placeholder values and colors*/
+.header, .footer { background-color: lightgrey; }
+
+.header, .main, .footer { width: 100%; }
+.main {padding-bottom: 2.5rem;}
 /*set the positions of header and footer*/
 .header {
     position: sticky;
@@ -11,7 +12,7 @@
     height: 3rem;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 2.5rem;
 }
@@ -20,6 +21,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    z-index: 3;
 }
 .header nav {
     display: flex;

@@ -5,7 +5,10 @@ import { createMain } from './main';
 import { createFooter } from './footer';
 
 const body = document.querySelector('body');
+const bodyContent = document.createElement('div');
+bodyContent.classList.add('bodyContent');
+body.appendChild(bodyContent);
 
-body.appendChild(createHeader());
-body.appendChild(createMain());
-body.appendChild(createFooter());
+bodyContent.appendChild(createHeader());
+bodyContent.appendChild(createMain());
+bodyContent.appendChild(createFooter());
