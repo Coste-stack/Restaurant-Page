@@ -22,4 +22,12 @@ module.exports = {
             inject: 'head'
         })
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };
