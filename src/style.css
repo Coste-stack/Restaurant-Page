@@ -31,16 +31,25 @@
 .imageContainer { position: relative; display: inline-block; }
 .imageContainer img {
     display: block;
-    max-height: 30rem;
+    max-height: 35rem;
+    border-radius: 1rem;
 }
 /*position credits in bottom right corner*/
 .creditText {
     position: absolute;
     bottom: 0; right: 0;
-    color: white;
+    color: #e2e2e2;
     text-decoration: none;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 5px;
+    font-size: 0.8rem;
     z-index: 5;
+}
+
+.mainWelcome {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #333333;
 }
