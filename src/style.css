@@ -118,6 +118,10 @@ body { width: 100%; }
     place-content: center center;
 }
 
+.textSection {
+    padding: 0.6rem;
+}
+
 /*button styling*/
 button {
     border-style: solid;
