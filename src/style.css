@@ -69,3 +69,27 @@ body { width: 100%; }
     gap: 10px;
     padding: 10px;
 }
+
+/*style menu*/
+.menuContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 2rem;
+}
+
+
+.foodContainer {
+    background-color: gray;
+    padding: 0.3rem;
+}
+.foodContainer .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.foodContainer .description {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+

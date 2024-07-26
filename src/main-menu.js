@@ -21,6 +21,10 @@ export function createMainMenu(){
 
     mainMenu.appendChild(header);
     mainMenu.appendChild(main);
+
+    // PLACEHOLDER
+    main.remove();
+    mainMenu.appendChild(createMainCourses());
     
     /*add a way to select specific menu category*/
     const buttons = header.querySelectorAll('button');

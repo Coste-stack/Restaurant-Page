@@ -11,25 +11,25 @@ export function createMainCourses(){
     menuContainer.classList.add('menuContainer');
 
     for(let i = 0; i < tab.length; i++){
-        /*create all containers*/
+        //create all containers
         const foodContainer = document.createElement('div');
         const imageSection = document.createElement('section');
         const textSection = document.createElement('section');
         const title = document.createElement('h1');
         const description = document.createElement('h2');
 
-        /*add classes to them*/
+        //add classes to them
         foodContainer.classList.add('foodContainer');
         imageSection.classList.add('imageSection');
         textSection.classList.add('textSection');
         title.classList.add('title');
         description.classList.add('description');
         
-        /*add all informations to them*/
+        //add all informations to them
         title.innerHTML = tab[i]['title'];
         description.innerHTML = tab[i]['description'];
         
-        /*structure them*/
+        //structure them
         textSection.appendChild(title);
         textSection.appendChild(description);
         foodContainer.appendChild(imageSection);
