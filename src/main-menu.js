@@ -1,4 +1,4 @@
-import { createMainCourses, mainCourses } from "./main-menu-mainCourses";
+import { createMainCourses, mainCourses, appetizers } from "./main-menu-mainCourses";
 
 export function createMainMenu(){
     const mainMenu = document.createElement('div');
@@ -7,10 +7,10 @@ export function createMainMenu(){
     /*add buttons to header*/
     const header = document.createElement('header');
     const nav = document.createElement('nav');
-    const tab = [['Main Courses'], ['Appetizers'], ['Desserts']];
+    const tab = ['Main Courses', 'Appetizers', 'Desserts'];
     for(let i = 0; i < tab.length; i++){
         const button = document.createElement('button');
-        button.innerHTML = tab[i][0];
+        button.innerHTML = tab[i];
 
         nav.appendChild(button);
         header.appendChild(nav);
@@ -27,7 +27,13 @@ export function createMainMenu(){
             // if there's already a menu created, delete it
             document.querySelectorAll('.menuContainer').forEach(el => el.remove());
 
-            mainMenu.appendChild(createMainCourses(mainCourses));
+            if(button.innerHTML == tab[0]) {
+                mainMenu.appendChild(createMainCourses(mainCourses));
+            } 
+            else if (button.innerHTML == tab[1]) {
+                mainMenu.appendChild(createMainCourses(appetizers));
+            }
+            
         });
     });
     
