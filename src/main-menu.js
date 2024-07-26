@@ -1,7 +1,10 @@
+import { createMainCourses } from "./main-menu-mainCourses";
+
 export function createMainMenu(){
     const mainMenu = document.createElement('div');
     mainMenu.classList.add('mainMenu');
 
+    /*add buttons to header*/
     const header = document.createElement('header');
     const nav = document.createElement('nav');
     const tab = [['Main Courses'], ['Appetizers'], ['Desserts']];
@@ -14,7 +17,20 @@ export function createMainMenu(){
     }
 
     const main = document.createElement('main');
+    const mainDefault = main.cloneNode(true);
 
     mainMenu.appendChild(header);
+    mainMenu.appendChild(main);
+    
+    /*add a way to select specific menu category*/
+    const buttons = header.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            main.remove();
+            mainMenu.appendChild(createMainCourses());
+        });
+    });
+
+    
     return mainMenu;
 }
