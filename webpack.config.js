@@ -11,15 +11,16 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        static: {
-            directory: './src',
-        },
+        static: './dist',
+        watchFiles: ['./'],
+        
+        compress: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index_bundle.html',
-            inject: 'head'
+            inject: 'body'
         })
     ],
     module: {
