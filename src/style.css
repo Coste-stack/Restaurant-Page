@@ -84,8 +84,8 @@ body {
 }
 .mainMenu header nav {
     display: flex;
-    gap: 10px;
-    padding: 10px;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 /*style menu*/
@@ -119,3 +119,16 @@ body {
     display: grid;
     place-content: center center;
 }
+
+.main button {
+    border-style: solid;
+    border-color: var(--heavy-brown);
+    background-color: var(--accent);
+    color: var(--primary-accent);
+    border-radius: 10px;
+
+    padding: 0.7rem;
+}
+.main button { transition: 0.05s; }
+.main button:hover { transform: scale(1.1); }
+.main button:active { transform: scale(1.05); }
