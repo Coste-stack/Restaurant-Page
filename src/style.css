@@ -1,3 +1,4 @@
+/*set colors*/
 :root {
     --primary-accent: #d9b061;
     --secondary-accent: #d9c4a9;
@@ -5,31 +6,21 @@
     --heavy-brown: #8d6f57;
     --accent: #3f0d0c;
 }
-
-body { 
-    width: 100%; 
-    background-color: var(--background);
-}
-
-.header p, .footer p {
-    color: var(--primary-accent);
-}
-
-/*set colors*/
-.header, .footer { 
-    background-color: var(--accent); 
-}
+body { background-color: var(--background); }
+.header p, .footer p { color: var(--primary-accent); }
+.header, .footer { background-color: var(--accent); }
 .mainWelcome { background-color: var(--heavy-brown); }
-
 .foodContainer { background-color: var(--heavy-brown);}
 
+body { width: 100%; }
 .header, .main, .footer { width: 100%; }
 .main {padding-bottom: 2.5rem;}
+
 /*set the positions of header and footer*/
 .header {
     position: sticky;
     top: 0;
-    height: 3rem;
+    height: 3.5rem;
 }
 .footer {
     bottom: 0;
@@ -48,13 +39,21 @@ body {
     padding: 10px;
 }
 
-.imageContainer, .imageSection { position: relative; display: inline-block; }
+/*set font size in header*/
+.header { font-size: 0.8rem; font-weight: 500; }
+.header p { font-size: 1.3rem; }
+
+/*regarding images and credits*/
+.imageContainer, .imageSection { 
+    position: relative; 
+    display: inline-block;
+}
 .mainWelcome .imageContainer img {
     display: block;
     max-height: 35rem;
     border-radius: 1rem;
 }
-/*position credits in bottom right corner*/
+/*position credits in bottom right corner and style them*/
 .creditText {
     position: absolute;
     bottom: 0; right: 0;
@@ -68,14 +67,14 @@ body {
 }
 .header, .footer { z-index: 2; }
 
-/*center welcome image*/
+/*welcome image*/
 .mainWelcome {
     display: grid;
     justify-content: center;
     padding: 1rem;
 }
 
-/*center menu header*/
+/*menu header*/
 .mainMenu header {
     display: flex;
     justify-content: center;
@@ -86,7 +85,7 @@ body {
     padding: 1rem;
 }
 
-/*style menu*/
+/*menu*/
 .menuContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -94,7 +93,7 @@ body {
     padding: 2rem;
 }
 
-
+/*menu cards*/
 .foodContainer {
     padding: 0.3rem;
     border-radius: 10px;
@@ -119,27 +118,16 @@ body {
     place-content: center center;
 }
 
+/*button styling*/
 button {
     border-style: solid;
     border-color: var(--heavy-brown);
     background-color: var(--accent);
     color: var(--primary-accent);
     border-radius: 10px;
-
     padding: 0.7rem;
 }
 button { transition: 0.05s; }
 button:hover { transform: scale(1.1); }
 button:active { transform: scale(1.05); }
-
-.header button {
-    padding: 0.5rem 1rem;  
-}
-
-.header {
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-.header p {
-    font-size: 1.3rem;
-}
+.header button { padding: 0.5rem 1rem; }
