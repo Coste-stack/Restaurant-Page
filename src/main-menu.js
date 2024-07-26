@@ -17,11 +17,8 @@ export function createMainMenu(){
     }
 
     const mainMenuDefault = mainMenu.cloneNode(true);
-
     mainMenu.appendChild(header);
-
-    // PLACEHOLDER
-    mainMenu.appendChild(createMainCourses());
+    mainMenu.appendChild(createMainCourses()); // as default put MainCourses
 
     /*add a way to select specific menu category*/
     const buttons = header.querySelectorAll('button');

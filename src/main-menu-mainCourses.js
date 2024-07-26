@@ -44,10 +44,14 @@ export function createMainCourses(){
         description.innerHTML = tab[i]['description'];
         const imageSrc = tab[i]['image'];
         const imageCreditText = createCredit(tab[i]['creditText'], tab[i]['creditLink']);
-        imageSection.appendChild(imageSrc);
-        imageSection.appendChild(imageCreditText);
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('imageContainer');
 
         //structure them
+        imageContainer.appendChild(imageSrc);
+        imageContainer.appendChild(imageCreditText);
+        imageSection.appendChild(imageContainer);
+        
         textSection.appendChild(title);
         textSection.appendChild(description);
         foodContainer.appendChild(imageSection);

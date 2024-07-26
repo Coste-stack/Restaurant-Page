@@ -92,6 +92,11 @@ body { width: 100%; }
     font-weight: 600;
 }
 
+.imageSection img {
+    max-height: 300px;
+}
 
-
-
+.imageSection {
+    display: grid;
+    place-content: center center;
+}
