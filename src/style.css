@@ -1,21 +1,23 @@
 /*set placeholder values and colors*/
-header, footer {
-    background-color: lightgreen;
-    width: 100vw;
+.header, .footer { background-color: lightgreen; }
+
+.header, .main, .footer {
+    width: 100%;
 }
 /*set the positions of header and footer*/
-header {
+.header {
     position: sticky;
     top: 0;
+    height: 3rem;
 }
-footer {
+.footer {
     position: absolute;
     bottom: 0;
-    height: 10vh;
+    height: 2.5rem;
 }
 
 /*align header items*/
-header {
+.header {
     display: flex;
     justify-content: space-between;
 }
