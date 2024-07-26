@@ -1,4 +1,4 @@
-import { createMainCourses, mainCourses, appetizers } from "./main-menu-mainCourses";
+import { createMainCourses, mainCourses, appetizers, desserts } from "./main-menu-mainCourses";
 
 export function createMainMenu(){
     const mainMenu = document.createElement('div');
@@ -33,7 +33,9 @@ export function createMainMenu(){
             else if (button.innerHTML == tab[1]) {
                 mainMenu.appendChild(createMainCourses(appetizers));
             }
-            
+            else if (button.innerHTML == tab[2]) {
+                mainMenu.appendChild(createMainCourses(desserts));
+            }
         });
     });
     

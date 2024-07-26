@@ -117,3 +117,41 @@ export const appetizers = [
         creditLink: 'https://www.freepik.com/free-photo/indian-food-aloo-tikki-papdi-chaat_15411511.htm'
     }
 ]
+
+export const desserts = [
+    {
+        title: 'Gulab Jamun', 
+        description: 'Soft, deep-fried milk-based dumplings soaked in a fragrant sugar syrup, often garnished with cardamom and rose water', 
+        image: createImage(butterChicken), 
+        creditText: 'Image by jcomp on Freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/indian-sweets-gulab-jamun_10920921.htm'
+    },
+    {
+        title: 'Rasgulla', 
+        description: 'Light and spongy cheese balls soaked in a sweet syrup, made from chenna (curdled milk) and flavored with cardamom', 
+        image: createImage(butterChicken), 
+        creditText: 'Image by stockimagefactorycom on Freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/rasgulla-dessert_3569510.htm'
+    },
+    {
+        title: 'Kheer', 
+        description: 'Creamy rice pudding cooked with milk, sugar, and flavored with cardamom, garnished with slivers of almonds and pistachios', 
+        image: createImage(butterChicken), 
+        creditText: 'Image by freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/indian-rice-pudding_5687254.htm'
+    },
+    {
+        title: 'Jalebi', 
+        description: 'Sweet, crispy spiral-shaped treats made from fermented dough, deep-fried and soaked in sugar syrup, served warm', 
+        image: createImage(butterChicken), 
+        creditText: 'Image by stockimagefactorycom on Freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/traditional-indian-sweet-jalebi_14915805.htm'
+    },
+    {
+        title: 'Mango Lassi', 
+        description: 'A refreshing yogurt-based drink blended with ripe mangoes, perfect for cooling off after a spicy meal', 
+        image: createImage(butterChicken), 
+        creditText: 'Image by freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/mango-lassi_1073776.htm'
+    }
+]
