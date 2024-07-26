@@ -49,9 +49,23 @@ body { width: 100%; }
     z-index: 5;
 }
 
+/*center welcome image*/
 .mainWelcome {
     display: grid;
     justify-content: center;
     padding: 1rem;
     background-color: #333333;
+}
+
+/*center menu header*/
+.mainMenu header {
+    display: flex;
+    justify-content: center;
+
+    background-color: #5b746b;
+}
+.mainMenu header nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
 }
