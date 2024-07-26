@@ -30,8 +30,8 @@ body { width: 100%; }
     padding: 10px;
 }
 
-.imageContainer { position: relative; display: inline-block; }
-.imageContainer img {
+.imageContainer, .imageSection { position: relative; display: inline-block; }
+.imageContainer img, .imageSection img {
     display: block;
     max-height: 35rem;
     border-radius: 1rem;

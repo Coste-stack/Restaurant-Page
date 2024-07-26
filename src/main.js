@@ -1,4 +1,3 @@
-import bgImage from './assets/DinnerImage.jpg';
 import { createMainWelcome } from './main-welcome';
 import { createMainMenu } from './main-menu';
 
