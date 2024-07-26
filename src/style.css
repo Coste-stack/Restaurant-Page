@@ -85,6 +85,15 @@ body { width: 100%; }
     padding: 1rem;
 }
 
+/*menu headline text*/
+.mainMenu .headline {
+    display: flex;
+    justify-content: start;
+    padding-left: 2rem;
+    color: var(--accent);
+}
+
+
 /*menu*/
 .menuContainer {
     display: grid;

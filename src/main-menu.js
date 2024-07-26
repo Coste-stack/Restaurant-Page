@@ -16,8 +16,15 @@ export function createMainMenu(){
         header.appendChild(nav);
     }
 
-    const mainMenuDefault = mainMenu.cloneNode(true);
+    /*create a headline text to show which category is currently showing */
+    const headline = document.createElement('nav');
+    const selectedCategory = document.createElement('h1');
+    headline.appendChild(selectedCategory);
+    headline.classList.add('headline');
+
     mainMenu.appendChild(header);
+    selectedCategory.innerHTML = tab[0];
+    mainMenu.appendChild(headline);
     mainMenu.appendChild(createMainCourses(mainCourses)); // as default put MainCourses
 
     /*add a way to select specific menu category*/
@@ -29,12 +36,15 @@ export function createMainMenu(){
 
             if(button.innerHTML == tab[0]) {
                 mainMenu.appendChild(createMainCourses(mainCourses));
+                selectedCategory.innerHTML = tab[0];
             } 
             else if (button.innerHTML == tab[1]) {
                 mainMenu.appendChild(createMainCourses(appetizers));
+                selectedCategory.innerHTML = tab[1];
             }
             else if (button.innerHTML == tab[2]) {
                 mainMenu.appendChild(createMainCourses(desserts));
+                selectedCategory.innerHTML = tab[2];
             }
         });
     });
