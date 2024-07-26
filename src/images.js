@@ -2,6 +2,7 @@ export function createImage(image){
     // use the imported image
     const imageSrc = new Image();
     imageSrc.src = image;
+    imageSrc.loading = 'lazy';
     return imageSrc;
 }
 
