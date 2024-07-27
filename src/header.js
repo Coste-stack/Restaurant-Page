@@ -19,7 +19,7 @@ export function createHeader(){
     const nav2 = document.createElement('nav');
     const logo = document.createElement('div');
     const logoText = document.createElement('p');
-    logoText.innerHTML = "Logo";
+    logoText.innerHTML = 'Welcome to our restaurant';
     logo.appendChild(logoText);
     nav2.appendChild(logo);
     header.appendChild(nav2);
