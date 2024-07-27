@@ -1,8 +1,18 @@
-import butterChicken from './assets/butter-chicken.jpg';
-import palakPaneer from './assets/palak-paneer.jpg';
-import choleBhature from './assets/chole-bhature.jpg';
-import lambRoganJosh from './assets/lamb-rogan-josh.jpg';
-import dalTadka from './assets/dal-tadka.jpg';
+import butterChicken from './assets/main-courses/butter-chicken.jpg';
+import palakPaneer from './assets/main-courses/palak-paneer.jpg';
+import choleBhature from './assets/main-courses/chole-bhature.jpg';
+import lambRoganJosh from './assets/main-courses/lamb-rogan-josh.jpg';
+import dalTadka from './assets/main-courses/dal-tadka.jpg';
+
+import samosas from './assets/appetizers/samosas.jpg';
+import pakoras from './assets/appetizers/pakoras.jpg';
+import paneerTikka from './assets/appetizers/paneer-tikka.jpg';
+import alooTikki from './assets/appetizers/aloo-tikki.jpg';
+
+import gulabJamun from './assets/desserts/gulab-jamun.jpg';
+import rasgulla from './assets/desserts/rasgulla.jpg';
+import jalebi from './assets/desserts/jalebi.jpg';
+import mangoLassi from './assets/desserts/mango-lassi.jpg';
 
 import { createImage } from './images.js';
 import { createCredit } from './images.js';
@@ -91,30 +101,30 @@ export const appetizers = [
     {
         title: 'Samosas', 
         description: 'Crispy pastry filled with spiced potatoes, peas, and cumin seeds, served with mint chutney', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by timolina on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/samosa-served-with-chutneys_13066518.htm'
+        image: createImage(samosas), 
+        creditText: 'Photo by Karthikeyan Anand', 
+        creditLink: 'https://www.pexels.com/photo/delicious-fried-samosa-in-a-wicker-tray-14477873/'
     },
     {
         title: 'Pakoras', 
         description: 'Assorted vegetables (onions, potatoes, spinach) dipped in a spiced gram flour batter and deep-fried, accompanied by tamarind chutney', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by timolina on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/close-up-pakoras-plate_13112594.htm'
+        image: createImage(pakoras), 
+        creditText: 'Image by ArtificialOG from Pixabay', 
+        creditLink: 'https://pixabay.com/photos/pakora-indian-food-indian-kitchen-3856054/'
     },
     {
         title: 'Paneer Tikka', 
         description: 'Marinated cubes of paneer (Indian cottage cheese) grilled to perfection with bell peppers and onions, served with a side of mint yogurt sauce', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by stockking on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/indian-food-paneer-tikka-indian-dish-cottage-cheese-with-buttery-masala-served-wooden-table_15411483.htm'
+        image: createImage(paneerTikka), 
+        creditText: 'Image by ArtificialOG from Pixabay', 
+        creditLink: 'https://pixabay.com/photos/tandoori-chicken-tikka-indian-food-3856045/'
     },
     {
         title: 'Aloo Tikki', 
         description: 'Spiced potato patties served with tamarind and cilantro-mint chutneys', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by stockking on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/indian-food-aloo-tikki-papdi-chaat_15411511.htm'
+        image: createImage(alooTikki), 
+        creditText: 'Image by freepik', 
+        creditLink: 'https://www.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_35022709.htm#fromView=search&page=1&position=10&uuid=4c8ede54-d0d7-4d3d-bdda-770924cf2795'
     }
 ]
 
@@ -122,36 +132,29 @@ export const desserts = [
     {
         title: 'Gulab Jamun', 
         description: 'Soft, deep-fried milk-based dumplings soaked in a fragrant sugar syrup, often garnished with cardamom and rose water', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by jcomp on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/indian-sweets-gulab-jamun_10920921.htm'
-    },
-    {
-        title: 'Rasgulla', 
-        description: 'Light and spongy cheese balls soaked in a sweet syrup, made from chenna (curdled milk) and flavored with cardamom', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by stockimagefactorycom on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/rasgulla-dessert_3569510.htm'
-    },
-    {
-        title: 'Kheer', 
-        description: 'Creamy rice pudding cooked with milk, sugar, and flavored with cardamom, garnished with slivers of almonds and pistachios', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/indian-rice-pudding_5687254.htm'
-    },
-    {
-        title: 'Jalebi', 
-        description: 'Sweet, crispy spiral-shaped treats made from fermented dough, deep-fried and soaked in sugar syrup, served warm', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by stockimagefactorycom on Freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/traditional-indian-sweet-jalebi_14915805.htm'
+        image: createImage(gulabJamun), 
+        creditText: 'Image by Imran from Pixabay ', 
+        creditLink: 'https://pixabay.com/photos/indian-sweet-gulab-jamun-indian-371357/'
     },
     {
         title: 'Mango Lassi', 
         description: 'A refreshing yogurt-based drink blended with ripe mangoes, perfect for cooling off after a spicy meal', 
-        image: createImage(butterChicken), 
-        creditText: 'Image by freepik', 
-        creditLink: 'https://www.freepik.com/free-photo/mango-lassi_1073776.htm'
+        image: createImage(mangoLassi), 
+        creditText: 'Photo by SimplyArt4794 ', 
+        creditLink: 'https://www.pexels.com/photo/glasses-of-delicious-mango-lassi-on-round-wooden-board-14509267/'
+    },
+    {
+        title: 'Jalebi', 
+        description: 'Sweet, crispy spiral-shaped treats made from fermented dough, deep-fried and soaked in sugar syrup, served warm', 
+        image: createImage(jalebi), 
+        creditText: 'Photo by Saveurs Secretes ', 
+        creditLink: 'https://www.pexels.com/photo/jalebi-on-a-stainless-plate-5831655/'
+    },
+    {
+        title: 'Rasgulla', 
+        description: 'Light and spongy cheese balls soaked in a sweet syrup, made from chenna (curdled milk) and flavored with cardamom', 
+        image: createImage(rasgulla), 
+        creditText: 'Image by Vikram Gautam from Pixabay', 
+        creditLink: 'https://pixabay.com/photos/laddu-sweets-mithai-diwali-dessert-6258444/'
     }
 ]
