@@ -12,6 +12,19 @@ body { background-color: var(--background); }
 .mainWelcome { background-color: var(--heavy-brown); }
 .foodContainer { background-color: var(--heavy-brown);}
 
+body::-webkit-scrollbar { 
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 2px;
+    border: 1px solid black;
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--secondary-accent);
+    width: 5px;
+}
+
 body { width: 100%; }
 .header, .main, .footer { width: 100%; }
 .main {padding-bottom: 2.5rem;}
@@ -65,7 +78,7 @@ body { width: 100%; }
     font-size: 0.8rem;
     z-index: 1;
 }
-.header, .footer { z-index: 2; }
+.header, .footer { z-index: 3; }
 
 /*welcome image*/
 .mainWelcome {
