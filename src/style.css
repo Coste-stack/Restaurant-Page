@@ -85,7 +85,7 @@ body { width: 100%; }
     display: grid;
     justify-content: center;
     padding: 1rem;
-    box-shadow: 0px 8px 24px 0px #000000;
+    box-shadow: 0px 8px 24px 0px #42445a;
 }
 
 /*menu header*/
@@ -121,6 +121,7 @@ body { width: 100%; }
     padding: 0.3rem;
     border-radius: 10px;
     color: var(--accent);
+    box-shadow: 5px 10px 30px 0 #42445a;
 }
 .foodContainer .title {
     font-size: 1.4rem;
