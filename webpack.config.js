@@ -5,7 +5,7 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: 'index_bundle.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, './dist'),
         clean: true,
     },
@@ -19,7 +19,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: 'index_bundle.html',
+            filename: 'index.html',
             inject: 'body'
         })
     ],
@@ -31,11 +31,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                      loader: 'file-loader',
-                    },
-                ],
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images',
+                },
             },
         ],
     },
